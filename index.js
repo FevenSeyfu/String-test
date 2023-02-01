@@ -15,4 +15,17 @@ const reverseString = (input) => {
 	console.log(reversedArray);
 	return reversedArray;
 }
-module.exports = {stringLength,reverseString};
+// Task 3
+class calculator{
+	add = (a,b) => {return a+b}
+	subtract = (a,b)=>{return a-b}
+	divide = (a,b)=>{return a/b}
+  multiply = (a,b)=>{return a*b}
+}
+// Task 4
+const capitalize = (input)=>{
+	const capitalizedArray = input[0].toUpperCase() + input.slice(1);
+	return capitalizedArray;
+}
+
+module.exports = {stringLength,reverseString,calculator,capitalize};
