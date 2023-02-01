@@ -7,5 +7,12 @@ const stringLength =(input)=>{
   }
 }
 
-module.exports= stringLength;
-
+// Task 2
+const reverseString = (input) => {
+	let splitstring = input.split("");
+	let reverse = splitstring.reverse();
+	let reversedArray = reverse.join("");
+	console.log(reversedArray);
+	return reversedArray;
+}
+module.exports = {stringLength,reverseString};
